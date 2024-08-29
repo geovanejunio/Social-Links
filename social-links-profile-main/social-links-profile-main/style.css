@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Inter-Variable';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --color-dark-grey: hsl(0, 0%, 12%);
+    --color-off-black: hsl(0, 0%, 8%);
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ body{
+    font-family: 'Inter-Variable';
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--color-off-black);
+    display: grid;
+     place-content: center; /* Centraliza o conteudo do Grid */   
+} 
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: var(--color-green);
+}
+
+img{
+    display: inherit;
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+p{
+    color: white;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.profile{
+    width: 34rem;
+    padding: 1.8rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    background-color: var(--color-dark-grey);
+}
+
+.profile .profile-title{
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.profile .socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3re;
+}
+
+.profile .socialmedia li{
+    width: 100%;
+}
+
+.profile .socialmedia li a{
+    background-color: var(--color-grey);
+    padding: 1.0rem 0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.profile .socialmedia li a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
